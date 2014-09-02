@@ -1,4 +1,5 @@
 ActiveAdmin.register PostComment do
+  permit_params :body
 
 
   # See permitted parameters documentation:
