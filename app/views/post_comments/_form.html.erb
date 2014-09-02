@@ -1,0 +1,13 @@
+<%= simple_form_for(@post_comment) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :post %>
+    <%= f.association :user %>
+    <%= f.input :body %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
